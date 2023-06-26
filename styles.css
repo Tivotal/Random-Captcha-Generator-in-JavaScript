@@ -1,0 +1,114 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 25px 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container .input_field {
+  position: relative;
+  height: 45px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.container .input_field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container .captcha_box input {
+  color: #6b6b6b;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.container .input_field .refresh_button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #4070f4;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .input_field .refresh_button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.container .captcha_input input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.container .message {
+  font-size: 14px;
+  margin: 14px 0;
+  color: #4070f4;
+  display: none;
+}
+
+.container .message.active {
+  display: block;
+}
+
+.container .button button {
+  height: 100%;
+  width: 100%;
+  background: #4070f4;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container .button button:active {
+  transform: scale(0.99);
+}
+
+.container .button.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
